@@ -6,13 +6,12 @@ import org.bukkit.command.CommandSender;
 
 public class MsgHubStatsCommand implements CommandExecutor {
 
-    private MessageHub plugin;
+    MsgHubStatsCommand() {}
 
-    public MsgHubStatsCommand(MessageHub plugin) {
-        this.plugin = plugin;
-    }
+    public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        return false;
+        sender.sendMessage("Total messages registered: " + MCore.getAllMessages().size());
+
+        return true;
     }
 }

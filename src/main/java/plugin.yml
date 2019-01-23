@@ -1,0 +1,8 @@
+main: dk.rasmusbendix.messagehub.MessageHub
+author: rasm945i
+version: 0.1
+name: MessageHub
+commands:
+  msghubstats:
+    description: Informative Important Information
+    aliases: [msghubstat]
